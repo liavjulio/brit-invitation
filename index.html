@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <link rel="icon" href="https://emojicdn.elk.sh/👶">
+    <meta property="og:title" content="הזמנה לברית של משפחת חולי">
+    <meta property="og:description" content="נשמח לראותכם ביום ראשון 19.4">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&q=80">    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנה לברית - משפחת חולי</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="card">
+    <header>
+        <h1>בשעה טובה!</h1>
+        <p>אנו נרגשים להזמינכם לברית המילה של בננו</p>
+    </header>
+    
+    <div class="details">
+        <h2 id="guest-greeting">אורחים יקרים,</h2>
+        <div class="parents">יובל וליאב חולי</div>
+        <div class="grandparents">
+            הורי האם: רוני ועדנה קורן | הורי האב: ענת חולי (וזכרו של שמואל ז"ל)
+        </div>
+        <hr>
+        <p><strong>יום ראשון, 19.04.2026 בשעה 14:30</strong></p>
+        <div class="navigation" style="margin-top: 15px;">
+    <a href="https://waze.com/ul?q=בית+הכנסת+770+ראשון+לציון" target="_blank" style="text-decoration: none; display: inline-block; padding: 8px 15px; background: #f0f0f0; border-radius: 20px; color: #333; font-size: 0.9rem; font-weight: bold;">
+        📍 ניווט לבית הכנסת ב-Waze
+    </a>
+</div>
+    </div>
+
+    <div id="rsvp-section">
+        <p>תגיעו לחגוג איתנו?</p>
+        <div class="button-group">
+            <button onclick="sendRSVP('מגיע/ה')" class="btn-confirm">✅ מגיעים בשמחה</button>
+            <button onclick="sendRSVP('לא מגיע/ה')" class="btn-decline">❌ לא נוכל להגיע</button>
+        </div>
+        <div id="guests-count-area" style="display: none; margin-top: 20px;">
+    <p>כמה אורחים תהיו?</p>
+    <input type="number" id="guests-count" min="1" value="1">
+    <br><br>
+    <button onclick="confirmFinalRSVP()" class="btn-confirm">שלח אישור סופי</button>
+</div>
+    </div>
+
+    <div id="thank-you" style="display: none;">
+        <h3>תודה רבה!</h3>
+        <p>התשובה התקבלה בהצלחה.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
