@@ -1,5 +1,5 @@
 // החלף את ה-URL הזה ב-Web App URL מה-Google Apps Script שלך
-const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwS6vfIcKYNPi_Qz-YtXkMSBowC2oq7rCBusAMOm5ZM8AlpygRjD7KFnOyxjG_mxHev9A/exec';
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyOdBsGkwGwVeAjtUqyi0h1N2RlaHphSKvcGyT7DUDyElPWYqAV7zzuAyyzlRLdNT4Cag/exec';
 
 const urlParams = new URLSearchParams(window.location.search);
 const guestName = urlParams.get('n') || "אורח/ת";
